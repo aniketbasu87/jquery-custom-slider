@@ -1,0 +1,74 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    color: #444444;
+}
+#jquery-slideshow-container {
+    overflow: hidden;
+    position: relative;
+    width: 200px;
+    height: 300px;
+    margin: 20px auto;
+}
+#jquery-slideshow-container #jquery-slideshow {
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+#jquery-slideshow-container #jquery-slideshow li {
+    display: inline;
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 200px;
+    height: 300px;
+    position: relative;
+}
+#jquery-slideshow-container #jquery-slideshow li a {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    color: #ffffff;
+    transition: color 0.2s ease-in;
+    background: #000000; /* fallback for old browsers */
+    background: rgba(0, 0, 0, 0.8);
+}
+ 
+#jquery-slideshow-container #jquery-slideshow li a:hover {
+    color: #ef233c;
+}
+ 
+/* Position our caption at the bottom right corner of the slide */
+#jquery-slideshow-container #jquery-slideshow li a span {
+    display: block;
+    padding: 8px 15px;
+}
+#jquery-slideshow-container #btn-prev,
+#jquery-slideshow-container #btn-next {
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    color: #ffffff;
+    font-size: 4em;
+    line-height: 1;
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+    transform: translateY(-50%);
+}
+ 
+#jquery-slideshow-container #btn-prev {
+    left: 15px;
+}
+ 
+#jquery-slideshow-container #btn-next {
+    right: 15px;
+}
+#jquery-slideshow-container #btn-prev span,
+#jquery-slideshow-container #btn-next span {
+    display: none;
+}
